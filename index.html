@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/ca86787c55.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.2.1/dist/flowbite.min.js"></script>
+
+    <title>Single Product</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: "Poppins", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="bg-white fixed w-full z-31 top-0 start-0  ">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="./img/logo.svg" class="h-8" alt="Flowbite Logo">
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+
+                    <ul class="flex-row flex lg:gap-10 gap-3 items-center">
+                        <li>
+                            <a href="index.html" class="hover:text-yellow-700"><i
+                                    class="fa-regular fa-user text-base"></i></a>
+                        </li>
+                        <li>
+                            <a href="shop.html" class="hover:text-yellow-700"><i
+                                    class="fa-solid fa-magnifying-glass text-base"></i></a>
+                        </li>
+                        <li>
+                            <a href="about.html" class="hover:text-yellow-700"><i
+                                    class="fa-regular fa-heart text-base"></i></a>
+                        </li>
+                        <li>
+                            <a href="contact.html" class="hover:text-yellow-700"><i
+                                    class="fa-solid fa-cart-shopping text-base"></i></a>
+                        </li>
+
+                    </ul>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
+                    <ul
+                        class="flex flex-col p-4 md:p-0 mt-4 font-medium rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 ">
+                        <li>
+                            <a href="index.html"
+                                class="hover:text-yellow-700 block py-2 px-3 text-black rounded-sm md:bg-transparent md:text-black md:p-0 md:dark:text-black"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="shop.html"
+                                class="hover:text-yellow-700 block py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:p-0 dark:text-black">Shop</a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="hover:text-yellow-700 block py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:p-0 dark:text-black">About</a>
+                        </li>
+                        <li>
+                            <a href="contact.html"
+                                class="hover:text-yellow-700 block py-2 px-3 text-gray-900 rounded-sm md:hover:bg-transparent md:p-0 dark:text-black">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="bg-[#FAF6F1] py-4 px-6 lg:mt-18">
+        <nav class="flex items-center space-x-2 text-sm text-gray-500">
+            <a href="#" class="hover:text-black">Home</a>
+            <span class="text-black"><i class="fa-solid fa-angle-right"></i></span>
+            <a href="#" class="hover:text-black">Shop</a>
+            <span class="text-black"><i class="fa-solid fa-angle-right"></i></span>
+            <span class="pl-4 border-l border-gray-300 text-black font-medium">Asgaard sofa</span>
+        </nav>
+    </div>
+
+
+    <section>
+        <div class="flex flex-col md:flex-row p-8 lg:py-12 bg-white border-b border-[#D9D9D9]">
+            <div class="flex flex-col lg:flex-row items-center md:items-start gap-4 md:w-1/2">
+                <div class="flex md:flex-col gap-4">
+                    <img src="./img/thumbnail-1.svg" alt="Thumbnail 1" class="w-20 h-20 object-cover" />
+                    <img src="./img/thumbnail-2.svg" alt="Thumbnail 2" class="w-20 h-20 object-cover" />
+                    <img src="./img/thumbnail-3.svg" alt="Thumbnail 3" class="w-20 h-20 object-cover" />
+                    <img src="./img/thumbnail-4.svg" alt="Thumbnail 4" class="w-20 h-20 object-cover" />
+                </div>
+                <div>
+                    <img src="./img/main-sofa.svg" alt="Asgaard Sofa" class="w-full max-w-md object-cover rounded" />
+                </div>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0">
+                <h1 class="text-4xl font-normal mb-2">Asgaard sofa</h1>
+                <p class="text-gray-500 text-2xl font-medium mb-2">Rs. 250,000.00</p>
+                <div class="flex items-center mb-4">
+                    <div class="flex items-center text-yellow-400 text-xl">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                            class="fa-regular fa-star-half"></i>
+                    </div>
+                    <span class="text-sm text-gray-500 pl-2 border-l">5 Customer Review</span>
+                </div>
+                <p class="mb-6 lg:w-[453px] text-sm">Setting the bar as one of the loudest speakers in its class, the
+                    Kilburn is a
+                    compact, stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended
+                    highs
+                    for a sound.
+                </p>
+                <div class="mb-4">
+                    <h3 class="text-gray-500 font-medium mb-2">Size</h3>
+                    <div class="flex gap-3">
+                        <button class="px-3 py-1 bg-yellow-600 text-white rounded">L</button>
+                        <button class="px-3 py-1 bg-gray-200 text-gray-800 rounded">XL</button>
+                        <button class="px-3 py-1 bg-gray-200 text-gray-800 rounded">XS</button>
+                    </div>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-gray-800 font-medium mb-2">Color</h3>
+                    <div class="flex gap-4">
+                        <div class="w-6 h-6 rounded-full bg-purple-600"></div>
+                        <div class="w-6 h-6 rounded-full bg-yellow-900"></div>
+                        <div class="w-6 h-6 rounded-full bg-black"></div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 pb-10 border-b border-gray-400">
+                    <div class="flex border rounded overflow-hidden">
+                        <button class="px-3 py-1 bg-gray-200 text-gray-800">-</button>
+                        <span class="px-4 py-1">1</span>
+                        <button class="px-3 py-1 bg-gray-200 text-gray-800">+</button>
+                    </div>
+                    <button
+                        class="px-6 py-2 text-black border rounded-[12px] hover:bg-yellow-700 hover:text-white transition">Add
+                        To Cart</button>
+                    <button
+                        class="px-6 py-2 border rounded-[12px] text-black hover:bg-yellow-700 hover:text-white transition">+
+                        Compare</button>
+                </div>
+                <div class="text-base text-[#9F9F9F] space-y-1 pt-6">
+                    <p><strong class="lg:pr-14">SKU</strong> : <span class="pl-2"> SS001</span></p>
+                    <p><strong class="lg:pr-2">Category</strong> : <span class="pl-2">Sofas</span></p>
+                    <p><strong class="lg:pr-12">Tags</strong> : <span class="pl-2">Sofa, Chair, Home, Shop</span></p>
+                </div>
+                <div class="mt-4 flex gap-4 text-base">
+                    <h4 class="text-[#9F9F9F] ">Share <span class="lg:pl-10">:</span></h4>
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="w-full px-4 md:px-16 py-12 bg-white">
+            <div class="flex justify-center space-x-8 pb-4 mb-8 text-2xl font-medium">
+                <button class="text-black">Description</button>
+                <button class="text-gray-500 hover:text-yellow-700 transition">Additional Information</button>
+                <button class="text-gray-500 hover:text-yellow-700 transition">Reviews [5]</button>
+            </div>
+
+            <div class="lg:pl-20 text-base font-normal text-gray-600 space-y-6 mb-12">
+                <p>
+                    Embodying the raw, wayward spirit of rock ‘n’ roll, the Kilburn portable active stereo speaker
+                    takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the
+                    road.
+                </p>
+                <p>
+                    Weighing in under 7 pounds, the Kilburn is a lightweight piece of vintage styled engineering.
+                    Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact, stout-hearted
+                    hero with a well-balanced audio which boasts a clear midrange and extended highs for a sound that is
+                    both articulate and pronounced. The analogue knobs allow you to fine tune the controls to your
+                    personal
+                    preferences while the guitar-influenced leather strap enables easy and stylish travel.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="flex items-center justify-center">
+                    <img src="./img/sofa-left.svg" alt="Sofa 1" class="object-contain w-full h-auto rounded-lg" />
+                </div>
+                <div class="flex items-center justify-center">
+                    <img src="./img/sofa-right.svg" alt="Sofa 2" class="object-contain w-full h-auto rounded-lg" />
+                </div>
+            </div>
+        </div>
+
+    </section>
+     <section>
+    <div class=" py-8">
+      <h2 class="text-3xl font-bold text-center mb-8">Our Products</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-4">
+
+        <div class="bg-white text-black overflow-hidden relative">
+          <img src="./img/product-image-1.svg" alt="Product Image" class="w-full object-cover">
+
+          <span class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-3 rounded-full">-30%</span>
+
+          <div class="p-4 bg-[#F4F5F7]">
+            <h3 class="text-lg font-semibold">Grifo</h3>
+            <p class="text-sm text-gray-500">Stylish cafe chair</p>
+            <div class="mt-2">
+              <span class="font-bold">Rp 1.500.000</span>
+            </div>
+          </div>
+
+          <div
+            class="absolute inset-0 bg-[#00000080] bg-opacity-70 text-white opacity-0 hover:opacity-100 transition-opacity flex flex-col items-center justify-center space-y-3">
+            <button class="bg-white text-[#B88E2F] lg:px-12 lg:px-8 px-4 py-2 font-semibold">Add to cart</button>
+            <div class="flex space-x-4 text-base">
+              <button><i class="fa-solid fa-share-nodes"></i> Share</button>
+              <button><i class="fa-solid fa-right-left text-xs"></i> Compare</button>
+              <button><i class="fa-regular fa-heart"></i> Like</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white text-black overflow-hidden relative">
+          <img src="./img/product-image-2.svg" alt="Product Image" class="w-full object-cover">
+
+          <div class="p-4 bg-[#F4F5F7]">
+            <h3 class="text-lg font-semibold">Muggo</h3>
+            <p class="text-sm text-gray-500">Small mug</p>
+            <div class="mt-2">
+              <span class="font-bold">Rp 150.000</span>
+            </div>
+          </div>
+
+          <div
+            class="absolute inset-0 bg-[#00000080] bg-opacity-70 text-white opacity-0 hover:opacity-100 transition-opacity flex flex-col items-center justify-center space-y-3">
+            <button class="bg-white text-[#B88E2F] lg:px-12 lg:px-8 px-4 py-2 font-semibold">Add to cart</button>
+            <div class="flex space-x-4 text-base">
+              <button><i class="fa-solid fa-share-nodes"></i> Share</button>
+              <button><i class="fa-solid fa-right-left text-xs"></i> Compare</button>
+              <button><i class="fa-regular fa-heart"></i> Like</button>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white text-black overflow-hidden relative">
+          <img src="./img/product-image-3.svg" alt="Product Image" class="w-full object-cover">
+
+          <span class="absolute top-2 right-2 bg-red-500 text-white text-xs px-2 py-3 rounded-full">-50%</span>
+
+          <div class="p-4 bg-[#F4F5F7]">
+            <h3 class="text-lg font-semibold">Pingky</h3>
+            <p class="text-sm text-gray-500">Cute bed set</p>
+            <div class="mt-2">
+              <span class="font-bold">Rp 7.000.000</span>
+              <span class="text-gray-400 line-through ml-2">Rp 14.000.000</span>
+            </div>
+          </div>
+
+          <div
+            class="absolute inset-0 bg-[#00000080] bg-opacity-70 text-white opacity-0 hover:opacity-100 transition-opacity flex flex-col items-center justify-center space-y-3">
+            <button class="bg-white text-[#B88E2F] lg:px-12 lg:px-8 px-4 py-2 font-semibold">Add to cart</button>
+            <div class="flex space-x-4 text-base">
+              <button><i class="fa-solid fa-share-nodes"></i> Share</button>
+              <button><i class="fa-solid fa-right-left text-xs"></i> Compare</button>
+              <button><i class="fa-regular fa-heart"></i> Like</button>
+            </div>
+          </div>
+        </div>
+        <div class="bg-white text-black  overflow-hidden relative">
+          <img src="./img/product-image-4.svg" alt="Product Image" class="w-full object-cover">
+
+          <span class="absolute top-2 right-2 bg-[#2EC1AC] text-white text-xs px-2 py-3 rounded-full">New</span>
+
+          <div class="p-4 bg-[#F4F5F7]">
+            <h3 class="text-lg font-semibold">Potty</h3>
+            <p class="text-sm text-gray-500">Minimalist flower pot</p>
+            <div class="mt-2">
+              <span class="font-bold">Rp 500.000</span>
+            </div>
+          </div>
+
+          <div
+            class="absolute inset-0 bg-[#00000080] bg-opacity-70 text-white opacity-0 hover:opacity-100 transition-opacity flex flex-col items-center justify-center space-y-3">
+            <button class="bg-white text-[#B88E2F] lg:px-12 lg:px-8 px-4 py-2 font-semibold">Add to cart</button>
+            <div class="flex space-x-4 text-base">
+              <button><i class="fa-solid fa-share-nodes"></i> Share</button>
+              <button><i class="fa-solid fa-right-left text-xs"></i> Compare</button>
+              <button><i class="fa-regular fa-heart"></i> Like</button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="flex justify-center mt-8">
+        <button
+          class="bg-white text-[#B88E2F] text-base font-semibold px-20 py-3 border border-[#B88E2F] hover:bg-yellow-500 hover:text-white transition">Show
+          More</button>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-white text-black px-6 md:px-16 pt-10 pb-6 border-t border-gray-200">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+      <div>
+        <h2 class="text-2xl font-bold mb-6">Funiro.</h2>
+        <p class="text-gray-400 text-sm leading-relaxed">
+          400 University Drive Suite 200 Coral Gables,<br />
+          FL 33134 USA
+        </p>
+      </div>
+  
+      <div>
+        <h3 class="text-gray-400 font-medium mb-4 pb-12">Links</h3>
+        <ul class="space-y-3 text-sm font-medium">
+          <li class="pb-12"><a href="#" class="hover:underline">Home</a></li>
+          <li class="pb-12"><a href="#" class="hover:underline">Shop</a></li>
+          <li class="pb-12"><a href="#" class="hover:underline">About</a></li>
+          <li class="pb-12"><a href="#" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div>
+        <h3 class="text-gray-400 font-medium mb-4 pb-12">Help</h3>
+        <ul class="space-y-3 text-sm font-medium">
+          <li class="pb-12"><a href="#" class="hover:underline">Payment Options</a></li>
+          <li class="pb-12"><a href="#" class="hover:underline">Returns</a></li>
+          <li class="pb-12"><a href="#" class="hover:underline">Privacy Policies</a></li>
+        </ul>
+      </div>
+  
+      <div>
+        <h3 class="text-gray-400 font-medium mb-4 pb-12">Newsletter</h3>
+        <div class="flex w-full max-w-xs">
+         <div class="border-b border-black">
+          <input
+          type="email"
+          placeholder="Enter Your Email Address"
+          class="w-full outline-none text-sm py-1 px-2 placeholder:text-gray-500"
+        />
+         </div>
+          <button type="submit" class="ml-2 text-sm font-semibold px-2 border-b border-black hover:text-gray-600">
+            SUBSCRIBE
+          </button>
+        </div>
+       </div>
+    </div>
+  
+    <div class="border-t border-gray-300 mt-10 pt-4 text-base text-black">
+      2023 funiro. All rights reverved
+    </div>
+  </footer>
+</body>
+
+</html>
